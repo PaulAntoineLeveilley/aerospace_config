@@ -122,36 +122,38 @@ alt-shift-s = 'resize smart -50'
 alt-shift-b = 'resize smart +50'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace
-ctrl-alt-1 = 'workspace 1'
-ctrl-alt-2 = 'workspace 2'
-ctrl-alt-3 = 'workspace 3'
-ctrl-alt-4 = 'workspace 4'
-ctrl-alt-5 = 'workspace 5'
-ctrl-alt-6 = 'workspace 6'
-ctrl-alt-7 = 'workspace 7'
-ctrl-alt-8 = 'workspace 8'
-ctrl-alt-9 = 'workspace 9'
+ctrl-alt-shift-1 = 'workspace 1'
+ctrl-alt-shift-2 = 'workspace 2'
+ctrl-alt-shift-3 = 'workspace 3'
+ctrl-alt-shift-4 = 'workspace 4'
+ctrl-alt-shift-5 = 'workspace 5'
+ctrl-alt-shift-6 = 'workspace 6'
+ctrl-alt-shift-7 = 'workspace 7'
+ctrl-alt-shift-8 = 'workspace 8'
+ctrl-alt-shift-9 = 'workspace 9'
 
 
-# See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
-ctrl-alt-shift-1 = 'move-node-to-workspace --focus-follows-window 1'
-ctrl-alt-shift-2 = 'move-node-to-workspace --focus-follows-window 2'
-ctrl-alt-shift-3 = 'move-node-to-workspace --focus-follows-window 3'
-ctrl-alt-shift-4 = 'move-node-to-workspace --focus-follows-window 4'
-ctrl-alt-shift-5 = 'move-node-to-workspace --focus-follows-window 5'
-ctrl-alt-shift-6 = 'move-node-to-workspace --focus-follows-window 6'
-ctrl-alt-shift-7 = 'move-node-to-workspace --focus-follows-window 7'
-ctrl-alt-shift-8 = 'move-node-to-workspace --focus-follows-window 8'
-ctrl-alt-shift-9 = 'move-node-to-workspace --focus-follows-window 9'
 
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
 #alt-tab = 'workspace-back-and-forth'
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-workspace-to-monitor
 alt-shift-tab = 'move-workspace-to-monitor --wrap-around next'
-
-# See: https://nikitabobko.github.io/AeroSpace/commands#mode
+ctrl-alt-p = 'mode workspace'
 alt-shift-p = 'mode service'
+[mode.workspace.binding]
+# See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
+ctrl-alt-shift-1 = ['move-node-to-workspace --focus-follows-window 1','mode main']
+ctrl-alt-shift-2 = ['move-node-to-workspace --focus-follows-window 2','mode main']
+ctrl-alt-shift-3 = ['move-node-to-workspace --focus-follows-window 3','mode main']
+ctrl-alt-shift-4 = ['move-node-to-workspace --focus-follows-window 4','mode main']
+ctrl-alt-shift-5 = ['move-node-to-workspace --focus-follows-window 5','mode main']
+ctrl-alt-shift-6 = ['move-node-to-workspace --focus-follows-window 6','mode main']
+ctrl-alt-shift-7 = ['move-node-to-workspace --focus-follows-window 7','mode main']
+ctrl-alt-shift-8 = ['move-node-to-workspace --focus-follows-window 8','mode main']
+ctrl-alt-shift-9 = ['move-node-to-workspace --focus-follows-window 9','mode main']
+esc = 'mode main'
+# See: https://nikitabobko.github.io/AeroSpace/commands#mode
 
 # 'service' binding mode declaration.
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
