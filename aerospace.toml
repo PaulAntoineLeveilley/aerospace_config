@@ -95,7 +95,7 @@ outer.right =      3
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#layout
 alt-v = 'layout tiles horizontal vertical'
-alt-c = 'layout accordion horizontal vertical'
+alt-c = 'layout tiles accordion'
 # See: https://nikitabobko.github.io/AeroSpace/commands#focus
 alt-h = 'focus left'
 alt-j = 'focus down'
