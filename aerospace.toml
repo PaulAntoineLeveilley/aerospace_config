@@ -11,6 +11,9 @@ after-login-command = []
 # Available commands : https://nikitabobko.github.io/AeroSpace/commands
 after-startup-command = []
 
+# Notify Sketchybar about binding mode changes
+on-mode-changed = ['exec-and-forget sketchybar --trigger aerospace_mode_change']
+
 # Start AeroSpace at login
 start-at-login = true
 
@@ -44,6 +47,7 @@ on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
 automatically-unhide-macos-hidden-apps = false
 
 
+#TODO:  ajouter la commande de bootstrap aerospace & sketchybar
 # Notify Sketchybar about workspace change
 exec-on-workspace-change = ['/bin/bash', '-c',
     'sketchybar --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE'
