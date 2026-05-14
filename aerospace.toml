@@ -11,9 +11,6 @@ after-login-command = []
 # Available commands : https://nikitabobko.github.io/AeroSpace/commands
 after-startup-command = []
 
-# Notify Sketchybar about binding mode changes
-on-mode-changed = ['exec-and-forget sketchybar --trigger aerospace_mode_change']
-
 # Start AeroSpace at login
 start-at-login = true
 
@@ -149,34 +146,34 @@ ctrl-alt-shift-9 = 'workspace 9'
 #alt-tab = 'workspace-back-and-forth'
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-workspace-to-monitor
 alt-shift-tab = 'move-workspace-to-monitor --wrap-around next'
-ctrl-alt-p = 'mode workspace'
-alt-shift-p = 'mode service'
+ctrl-alt-p = ['mode workspace', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=workspace']
+alt-shift-p = ['mode service', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=service']
 [mode.workspace.binding]
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
-ctrl-alt-shift-1 = ['move-node-to-workspace --focus-follows-window 1','mode main']
-ctrl-alt-shift-2 = ['move-node-to-workspace --focus-follows-window 2','mode main']
-ctrl-alt-shift-3 = ['move-node-to-workspace --focus-follows-window 3','mode main']
-ctrl-alt-shift-4 = ['move-node-to-workspace --focus-follows-window 4','mode main']
-ctrl-alt-shift-5 = ['move-node-to-workspace --focus-follows-window 5','mode main']
-ctrl-alt-shift-6 = ['move-node-to-workspace --focus-follows-window 6','mode main']
-ctrl-alt-shift-7 = ['move-node-to-workspace --focus-follows-window 7','mode main']
-ctrl-alt-shift-8 = ['move-node-to-workspace --focus-follows-window 8','mode main']
-ctrl-alt-shift-9 = ['move-node-to-workspace --focus-follows-window 9','mode main']
-esc = 'mode main'
+ctrl-alt-shift-1 = ['move-node-to-workspace --focus-follows-window 1','mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=main']
+ctrl-alt-shift-2 = ['move-node-to-workspace --focus-follows-window 2','mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=main']
+ctrl-alt-shift-3 = ['move-node-to-workspace --focus-follows-window 3','mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=main']
+ctrl-alt-shift-4 = ['move-node-to-workspace --focus-follows-window 4','mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=main']
+ctrl-alt-shift-5 = ['move-node-to-workspace --focus-follows-window 5','mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=main']
+ctrl-alt-shift-6 = ['move-node-to-workspace --focus-follows-window 6','mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=main']
+ctrl-alt-shift-7 = ['move-node-to-workspace --focus-follows-window 7','mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=main']
+ctrl-alt-shift-8 = ['move-node-to-workspace --focus-follows-window 8','mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=main']
+ctrl-alt-shift-9 = ['move-node-to-workspace --focus-follows-window 9','mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=main']
+esc = ['mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=main']
 # See: https://nikitabobko.github.io/AeroSpace/commands#mode
 
 # 'service' binding mode declaration.
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
 [mode.service.binding]
-esc = ['reload-config', 'mode main']
-r = ['flatten-workspace-tree', 'mode main'] # reset layout
-f = ['layout floating tiling', 'mode main'] # Toggle between floating and tiling layout
-backspace = ['close-all-windows-but-current', 'mode main']
+esc = ['reload-config', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=main']
+r = ['flatten-workspace-tree', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=main'] # reset layout
+f = ['layout floating tiling', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=main'] # Toggle between floating and tiling layout
+backspace = ['close-all-windows-but-current', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=main']
 
 # sticky is not yet supported https://github.com/nikitabobko/AeroSpace/issues/2
 #s = ['layout sticky tiling', 'mode main']
 
-alt-shift-h = ['join-with left', 'mode main']
-alt-shift-j = ['join-with down', 'mode main']
-alt-shift-k = ['join-with up', 'mode main']
-alt-shift-l = ['join-with right', 'mode main']
+alt-shift-h = ['join-with left', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=main']
+alt-shift-j = ['join-with down', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=main']
+alt-shift-k = ['join-with up', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=main']
+alt-shift-l = ['join-with right', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=main']
