@@ -149,6 +149,7 @@ ctrl-alt-shift-9 = 'workspace 9'
 #alt-tab = 'workspace-back-and-forth'
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-workspace-to-monitor
 alt-shift-tab = 'move-workspace-to-monitor --wrap-around next'
+alt-shift-o = ['mode move-workspace', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=move-workspace']
 ctrl-alt-p = ['mode workspace', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=workspace']
 alt-shift-p = ['mode service', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=service']
 [mode.workspace.binding]
@@ -180,3 +181,15 @@ alt-shift-h = ['join-with left', 'mode main', 'exec-and-forget sketchybar --trig
 alt-shift-j = ['join-with down', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=main']
 alt-shift-k = ['join-with up', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=main']
 alt-shift-l = ['join-with right', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=main']
+
+[mode.move-workspace.binding]
+ctrl-alt-shift-1 = ['move-workspace-to-monitor 1', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=main']
+ctrl-alt-shift-2 = ['move-workspace-to-monitor 2', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=main']
+ctrl-alt-shift-3 = ['move-workspace-to-monitor 3', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=main']
+ctrl-alt-shift-4 = ['move-workspace-to-monitor 4', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=main']
+ctrl-alt-shift-5 = ['move-workspace-to-monitor 5', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=main']
+ctrl-alt-shift-6 = ['move-workspace-to-monitor 6', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=main']
+ctrl-alt-shift-7 = ['move-workspace-to-monitor 7', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=main']
+ctrl-alt-shift-8 = ['move-workspace-to-monitor 8', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=main']
+ctrl-alt-shift-9 = ['move-workspace-to-monitor 9', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=main']
+esc = ['mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=main']
