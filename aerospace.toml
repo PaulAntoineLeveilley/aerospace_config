@@ -149,6 +149,7 @@ ctrl-alt-shift-9 = 'workspace 9'
 #alt-tab = 'workspace-back-and-forth'
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-workspace-to-monitor
 alt-shift-tab = 'move-workspace-to-monitor --wrap-around next'
+ctrl-alt-o = ['mode move-window-monitor', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=move-window-monitor']
 alt-shift-o = ['mode move-workspace', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=move-workspace']
 ctrl-alt-p = ['mode workspace', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=workspace']
 alt-shift-p = ['mode service', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=service']
@@ -192,4 +193,16 @@ ctrl-alt-shift-6 = ['move-workspace-to-monitor 6', 'mode main', 'exec-and-forget
 ctrl-alt-shift-7 = ['move-workspace-to-monitor 7', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=main']
 ctrl-alt-shift-8 = ['move-workspace-to-monitor 8', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=main']
 ctrl-alt-shift-9 = ['move-workspace-to-monitor 9', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=main']
+esc = ['mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=main']
+
+[mode.move-window-monitor.binding]
+ctrl-alt-shift-1 = ['move-node-to-monitor --focus-follows-window 1', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=main']
+ctrl-alt-shift-2 = ['move-node-to-monitor --focus-follows-window 2', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=main']
+ctrl-alt-shift-3 = ['move-node-to-monitor --focus-follows-window 3', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=main']
+ctrl-alt-shift-4 = ['move-node-to-monitor --focus-follows-window 4', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=main']
+ctrl-alt-shift-5 = ['move-node-to-monitor --focus-follows-window 5', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=main']
+ctrl-alt-shift-6 = ['move-node-to-monitor --focus-follows-window 6', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=main']
+ctrl-alt-shift-7 = ['move-node-to-monitor --focus-follows-window 7', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=main']
+ctrl-alt-shift-8 = ['move-node-to-monitor --focus-follows-window 8', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=main']
+ctrl-alt-shift-9 = ['move-node-to-monitor --focus-follows-window 9', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=main']
 esc = ['mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=main']
